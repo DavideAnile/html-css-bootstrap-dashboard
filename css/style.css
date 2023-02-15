@@ -13,7 +13,7 @@ nav{
 .my-big-container{
     width: 100vw;
     height: calc(100vh - 60px);
-    background-color: blue;
+    /* background-color: red; */
 }
 
 .my-big-container aside{
@@ -24,13 +24,17 @@ nav{
 }
 
 .my-big-container main{
+    overflow: auto;
     width: calc(100% - 150px);
 }
 
 .my-big-container main header{
-    background-color: rgba(245, 245, 220, 0.527);
+    background-color: #1b72e8;
 }
 
+.offcanvas{
+    --bs-offcanvas-width: 600px;
+}
 
 
 /* Media__________________ */
