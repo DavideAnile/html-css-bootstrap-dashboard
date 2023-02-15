@@ -4,28 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Dashboard</title>
 </head>
 <body>
-    <nav>
 
-    </nav>
+    <nav class="d-flex justify-content-between align-items-center px-2 py-1">   <!-- NAVBAR-->
+        <div class="d-none d-md-flex">
+            <img src="img/logo.svg" alt="">
+        </div>
+        <div class="mobile-logo d-md-none h-100">
+            <img src="img/mobile-logo.png" alt="" class="h-100">
+        </div>
+        <div class="flex-grow-1 px-4 position-relative h-75">
+            <i class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y ps-2"></i>
+            <input type="text" class="nav-search fw-semibold w-100 h-100 border-0 rounded-2 ps-5" placeholder="Prova a cercare: Lezioni di Laravel">
+        </div>
+        <div class="d-flex align-items-center text-muted">
+            <div class="d-none d-md-block">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-circle-question ps-3"></i>
+                <i class="fa-solid fa-ellipsis-vertical px-3"></i>
+            </div>
+            <i class="fa-solid fa-bell text-warning-emphasis pe-2"></i>
+        </div>
+    </nav>  <!-- Navbar-->
+            
+        
+
+
 
     <div class="my-big-container d-flex">
-        <aside>
 
-        </aside>
+        
+        <aside class="d-flex flex-column justify-content-between align-items-center px-2 py-4 text-white"> <!-- ASIDE-->
+            <div>
+                <div class="d-flex gap-3">
+                    <div><i class="fa-solid fa-house"></i></div>
+                    <div class="text-aside">Home</div>
+                </div>
+            
+                <div class="d-flex gap-3 py-3">
+                    <div><i class="fa-solid fa-chart-simple"></i></div>
+                    <div class="text-aside">Stats</div>
+                </div>
+                <div class="d-flex gap-3">
+                    <div><i class="fa-solid fa-signal"></i></div>
+                    <div class="text-aside">Signals</div>
+                </div>
+            </div>
+            <div class="d-flex gap-3">
+                <div><i class="fa-solid fa-gear"></i></div>
+                <div class="text-aside">Admin</div>
+            </div>
+        </aside>   <!-- /ASIDE-->
+
 
         <main>
-            <header class="container-fluid d-flex justify-content-between text-white py-3">
-                <div class="header-left"><h1>Boolean</h1></div>
-                <div class="header-central">
-                    <div>Studenti online negli ultimi 30 minuti</div>
-                    <div class="fw-bold">125</div>
+            <header class="container-fluid d-flex flex-column flex-md-row justify-content-between text-white py-2">
+                <div class="header-left d-flex align-items-center order-1 order-md-0 py-2">
+                    <h1>Boolean</h1>
                 </div>
-                <div class="header-right d-flex flex-row align-items-center gap-3">
+                <div class="header-central order-2 order-md-1 py-3">
+                    <div>Studenti online negli ultimi 30 minuti</div>
+                    <div class="fs-4 fw-bold">125</div>
+                </div>
+                <div class="header-right d-flex flex-row align-items-center order-0 order-md-2 gap-3 py-2 pe-5">
                     <div>Nuovo studente</div>
                     <div><button>+</button></div>
                 </div>

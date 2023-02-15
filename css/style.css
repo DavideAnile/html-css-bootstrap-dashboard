@@ -1,9 +1,15 @@
 nav{
     height: 60px;
-    background-color: red;
+    /* background-color: red; */
 }
 
+.nav-search{
+    background-color: #e5e5e5;
+}
 
+.fa-chart-simple, .fa-gear{
+    width: 18px;
+}
 .my-big-container{
     width: 100vw;
     height: calc(100vh - 60px);
@@ -11,14 +17,36 @@ nav{
 }
 
 .my-big-container aside{
-    width: 100px;
-    background-color: aqua;
+    width: 150px;
+    background-color: #051e34;
+    background-image: url("/img/sidebar-bg.png");
+
 }
 
 .my-big-container main{
-    width: calc(100% - 100px);
+    width: calc(100% - 150px);
 }
 
 .my-big-container main header{
     background-color: rgba(245, 245, 220, 0.527);
+}
+
+
+
+/* Media__________________ */
+
+@media screen and (max-width: 768px){
+    
+    .my-big-container aside{
+        width: 50px;
+    }
+
+    .my-big-container main{
+        width: calc(100% - 50px);
+    }
+    
+    
+    .text-aside{
+        display: none;
+    }
 }
