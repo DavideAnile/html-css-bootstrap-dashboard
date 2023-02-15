@@ -32,6 +32,18 @@ nav{
     background-color: #1b72e8;
 }
 
+
+.first-col{
+   
+    width: 60%;
+}
+
+.table td img{
+    
+    
+    height: 30px;
+}
+
 .offcanvas{
     --bs-offcanvas-width: 600px;
 }
@@ -39,7 +51,7 @@ nav{
 
 /* Media__________________ */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px){
     
     .my-big-container aside{
         width: 50px;
