@@ -1,0 +1,24 @@
+nav{
+    height: 60px;
+    background-color: red;
+}
+
+
+.my-big-container{
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background-color: blue;
+}
+
+.my-big-container aside{
+    width: 100px;
+    background-color: aqua;
+}
+
+.my-big-container main{
+    width: calc(100% - 100px);
+}
+
+.my-big-container main header{
+    background-color: rgba(245, 245, 220, 0.527);
+}
