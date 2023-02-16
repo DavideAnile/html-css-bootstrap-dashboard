@@ -32,20 +32,29 @@ nav{
     background-color: #1b72e8;
 }
 
-
-.first-col{
-   
-    width: 60%;
+.my-breadcrumb{
+    background-color: #165bba;
 }
 
-.table td img{
-    
-    
+.breadcrumb-item+.breadcrumb-item::before{
+    --bs-breadcrumb-item-padding-x: 0;
+    color: white;
+}
+
+.my-table td:not(:first-child),
+.my-table th:not(:first-child){
+    width: 100px;
+    text-align: center;
+}
+
+.my-table td img{
     height: 30px;
 }
+    
+    
 
-.offcanvas{
-    --bs-offcanvas-width: 600px;
+.offcanvas.my-offcanvas{
+    width: 600px;
 }
 
 
@@ -61,8 +70,14 @@ nav{
         width: calc(100% - 50px);
     }
     
-    
+    .offcanvas.my-offcanvas{
+        width: 100%;
+    }
+       
     .text-aside{
         display: none;
     }
 }
+
+
+
