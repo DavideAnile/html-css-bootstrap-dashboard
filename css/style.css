@@ -1,27 +1,46 @@
+
+/* NAV */
+
 nav{
     height: 60px;
-    /* background-color: red; */
 }
+    
 
 .nav-search{
     background-color: #e5e5e5;
 }
 
-.fa-chart-simple, .fa-gear{
-    width: 18px;
-}
+/* NAV*/
+
+/* COMMON*/
+
 .my-big-container{
     width: 100vw;
     height: calc(100vh - 60px);
-    /* background-color: red; */
+}
+    
+/* /COMMON*/
+
+/* ASIDE */
+
+.fa-chart-simple, .fa-gear{
+    width: 18px;
 }
 
 .my-big-container aside{
     width: 150px;
     background-color: #051e34;
     background-image: url("/img/sidebar-bg.png");
-
 }
+
+.aside-btn:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.521);
+}
+
+/* /ASIDE*/
+
+/* MAIN */
 
 .my-big-container main{
     overflow: auto;
@@ -32,6 +51,13 @@ nav{
     background-color: #1b72e8;
 }
 
+.offcanvas.my-offcanvas{
+    width: 600px;
+}
+
+.my-checkbox{
+    padding-left: 36px;
+}
 .my-breadcrumb{
     background-color: #165bba;
 }
@@ -51,11 +77,7 @@ nav{
     height: 30px;
 }
     
-    
-
-.offcanvas.my-offcanvas{
-    width: 600px;
-}
+ /* MAIN */   
 
 
 /* Media__________________ */
